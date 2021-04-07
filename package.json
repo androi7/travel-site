@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/androi7/travel-site#readme",
   "dependencies": {
+    "lazysizes": "^5.3.2",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   },

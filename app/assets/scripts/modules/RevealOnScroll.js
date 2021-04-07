@@ -20,7 +20,6 @@ class RevealOnScroll {
   }
 
   calcCaller() {
-    console.log("Scroll function ran");
     this.itemsToReveal.forEach(el => {
       if (el.isRevealed == false) {
         this.calculateIfScrollTo(el);
@@ -33,7 +32,6 @@ class RevealOnScroll {
     // window.innerHeight: interior height of the window in pixels, including the height of the horizontal scroll bar
     // HTMLElement.offsetTop: distance of the outer border of the current element relative to the inner border of the top of the offsetParent node
     if (window.scrollY + this.browserHeight > el.offsetTop) {
-      console.log('elem is calculated');
       // IE: el.getBoundingClientRect().top
       // better to use intersection observer -> more efficient
       let scrollPercent = (el.getBoundingClientRect().y / this.browserHeight) * 100

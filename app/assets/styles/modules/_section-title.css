@@ -11,7 +11,7 @@
     font-weight: 500;
   }
 
-  &__blue {
+  &--blue {
     color: $mainBlue;
   }
 
